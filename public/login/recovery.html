@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recuperar Contraseña</title>
+  <link rel="stylesheet" href="/public/css/login.css">
+</head>
+
+<body>
+
+<div class="login-container">
+  <div class="login-box">
+    <h2>Recuperar Contraseña</h2>
+
+    <form id="recoveryForm" onsubmit="recoverPass(event)">
+      <div class="input-group">
+        <label>Correo registrado</label>
+        <input type="email" id="recoveryEmail" required>
+      </div>
+
+      <button class="btn" type="submit">Buscar</button>
+      <p id="recoveryMsg" class="error-msg"></p>
+    </form>
+
+    <a href="/public/login/login.html" class="back-link">Volver al login</a>
+  </div>
+</div>
+
+<script src="/public/js/recovery.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crear Usuario</title>
+  <link rel="stylesheet" href="/public/css/login.css">
+</head>
+
+<body>
+
+<div class="login-container">
+  <div class="login-box">
+    <h2>Registrar Nuevo Usuario</h2>
+
+    <form id="registerForm" onsubmit="registerUser(event)">
+      <div class="input-group">
+        <label>Nombre de Usuario</label>
+        <input type="text" id="newUser" required>
+      </div>
+
+      <div class="input-group">
+        <label>Correo</label>
+        <input type="email" id="newEmail" required>
+      </div>
+
+      <div class="input-group">
+        <label>Contraseña</label>
+        <input type="password" id="newPass" required>
+      </div>
+
+      <button class="btn" type="submit">Crear Cuenta</button>
+      <p id="registerMsg" class="error-msg"></p>
+    </form>
+
+    <a href="/public/login/login.html" class="back-link">Volver al login</a>
+  </div>
+</div>
+
+<script src="/public/js/register.js"></script>
+
+</body>
+</html>
