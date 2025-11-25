@@ -23,6 +23,6 @@ function registerUser(event) {
   msg.textContent = "Usuario creado correctamente";
 
   setTimeout(() => {
-    window.location.href = "/public/login/login.html";
+    window.location.href = "index.html";
   }, 1200);
 }

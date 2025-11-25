@@ -90,7 +90,7 @@
 
     function logout() {
       localStorage.removeItem("logged");
-      location.href = "/public/login/login.html";
+      location.href = "public/login/login.html";
     }
 
 

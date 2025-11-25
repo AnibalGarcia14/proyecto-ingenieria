@@ -11,16 +11,11 @@
 <body>
 
   <script>
+
     if (localStorage.getItem("logged") !== "true") {
       window.location.href = "public/login/login.html";
     }
-    </script>
-
-    <script>
-      if (localStorage.getItem("logged") !== "true") {
-        window.location.href = "public/login/login.html";
-      }
-    </script>
+  </script>
 
     <script>
 
@@ -176,7 +171,7 @@
         <button class="btn" onclick="exportReport()" style="margin-top: 20px;">📥 Descargar Reporte (CSV)</button>
       </section>
 
-      <!-- ===== MÓDULO 4: CONTROL ===== -->
+      <!-- MÓDULO 4: CONTROL -->
       <section id="control" class="section">
         <h2>🧰 Módulo 4: Sistema de Control</h2>
         <p>Validaciones, seguridad y mantenimiento.</p>
@@ -193,6 +188,8 @@
           <button class="btn secondary" onclick="restoreData()" style="grid-column: 1/-1;">Restaurar Último Respaldo</button>
         </div>
         <div id="backupInfo"></div>
+
+
 
         <h3>📝 Feedback del Usuario</h3>
         <div class="form-group">
@@ -217,7 +214,9 @@
         </div>
       </section>
 
-      <!-- ===== MÓDULO 5: USUARIOS ===== -->
+
+
+      <!--  MÓDULO 5: USUARIOS -->
       <section id="usuarios" class="section">
       <h2>👥 Administración de Usuarios</h2>
       <p>Gestiona las cuentas registradas en el sistema.</p>
@@ -260,7 +259,7 @@
     </div>
   </main>
 
-<script src="public/js/app.js" ></script>
+<script src="public/js/app.js"></script>
 
 </body>
 </html>
