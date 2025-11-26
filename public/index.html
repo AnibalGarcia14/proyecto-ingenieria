@@ -38,6 +38,7 @@
 
   <!-- MENÚ LATERAL -->
   <aside>
+
     <div class="logo">🧭 Gestión</div>
     <div class="menu">
       <button class="menu-btn active" data-target="entrada">📥 Entrada</button>
@@ -45,12 +46,16 @@
       <button class="menu-btn" data-target="salidas">📤 Salidas</button>
       <button class="menu-btn" data-target="control">🧰 Control</button>
     </div>
+
   </aside>
 
   <!-- CONTENIDO PRINCIPAL -->
   <main>
+
     <header>
+
       <h1>Mi negocio al dia </h1>
+
       <div class="user-info">
         <button class="btn small-btn" onclick="switchSection('usuarios')" id="headerUser"></button>
         <a href="#" onclick="logout()" class="logout-link">Logout</a>
@@ -66,11 +71,13 @@
         <p>Registro y gestión de información inicial del sistema.</p>
 
         <h3>Registrar Nuevo Producto</h3>
+
         <div class="form-group">
           <div>
             <label>Nombre del Producto *</label>
             <input type="text" id="prodName" placeholder="Ej: Agua Mineral">
           </div>
+
           <div>
             <label>Categoría *</label>
             <select id="prodCategory">
@@ -82,14 +89,17 @@
               <option>Otros</option>
             </select>
           </div>
+
           <div>
             <label>Precio Unitario ($) *</label>
             <input type="number" id="prodPrice" placeholder="0.00" step="0.01">
           </div>
+
           <div>
             <label>Cantidad Inicial *</label>
             <input type="number" id="prodQty" placeholder="0" min="0">
           </div>
+
           <button class="btn" onclick="addProduct()" style="grid-column: 1/-1;">Registrar Producto</button>
         </div>
 
@@ -98,21 +108,26 @@
 
         <h3>📊 Ventas del Día</h3>
         <div class="form-group">
+
           <div>
             <label>Seleccionar Producto *</label>
             <select id="saleProduct">
               <option value="">Seleccionar...</option>
             </select>
           </div>
+
           <div>
             <label>Cantidad Vendida *</label>
             <input type="number" id="saleQty" placeholder="1" min="1">
           </div>
+
           <div>
             <label>Precio de Venta ($) *</label>
             <input type="number" id="salePrice" step="0.01">
           </div>
+
           <button class="btn" onclick="recordSale()" style="grid-column: 1/-1;">Registrar Venta</button>
+
         </div>
 
         <div id="salesTable"></div>
@@ -127,11 +142,14 @@
         <div class="stats-grid" id="statsGrid"></div>
 
         <h3>📦 Estado del Inventario</h3>
+
         <div class="form-group">
+
           <input type="text" id="searchProduct" placeholder="Buscar producto...">
           <button class="btn" onclick="filterInventory()">Buscar</button>
           <button class="btn secondary" onclick="loadInventory()">Ver Todo</button>
         </div>
+
         <div id="inventoryTable"></div>
 
         <h3>💰 Flujo de Caja Diario</h3>
@@ -147,22 +165,28 @@
         <div id="alertsContainer"></div>
 
         <h3>📊 Estadísticas de Ventas</h3>
+
         <div class="card-container">
           <div class="card">
+
             <h4>Total de Ventas</h4>
             <div class="card-value" id="totalSales">$0</div>
             <p id="totalSalesCount">0 transacciones</p>
+
           </div>
+
           <div class="card">
             <h4>Producto Más Vendido</h4>
             <div class="card-value" id="topProduct">N/A</div>
             <p id="topProductCount">0 unidades</p>
           </div>
+
           <div class="card">
             <h4>Producto Bajo Stock</h4>
             <div class="card-value" id="lowStockCount">0</div>
             <p>Requieren reorden</p>
           </div>
+
         </div>
 
         <h3>📋 Reporte de Transacciones</h3>
@@ -192,7 +216,9 @@
 
 
         <h3>📝 Feedback del Usuario</h3>
+
         <div class="form-group">
+
           <div style="grid-column: 1/-1;">
             <label>Tipo de Mensaje *</label>
             <select id="feedbackType">
@@ -201,11 +227,14 @@
               <option>Mejora</option>
             </select>
           </div>
+
           <div style="grid-column: 1/-1;">
             <label>Mensaje *</label>
             <textarea id="feedbackMsg" placeholder="Describe tu comentario..." rows="4"></textarea>
           </div>
+
           <button class="btn" onclick="sendFeedback()" style="grid-column: 1/-1;">Enviar Feedback</button>
+
         </div>
 
         <h3>🔧 Mantenimiento</h3>
@@ -242,11 +271,13 @@
         </div>
 
         <div>
+          
           <label>Rol</label>
           <select id="newRole">
             <option value="admin">Administrador</option>
-            <option value="user">Usuario</option>
+            <option value="user">Vendedor</option>
           </select>
+
         </div>
 
         <button class="btn" onclick="createUser()" style="grid-column: 1/-1;">Crear Usuario</button>
