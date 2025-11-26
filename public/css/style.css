@@ -115,6 +115,7 @@ header {
 }
 
 .titulo h1 {
+    margin-left: auto;
     text-align: center;
 }
 
